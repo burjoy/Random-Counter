@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://cdn.tailwindcss.com"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100;300;400&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	<title>Random Counter</title>
+</head>
+
+<body class="">
+
+	<header class="font-['Bebas_Neue'] mb-8">
+		<div class="w-full border-4 border-sky-700 h-20">
+			<div id="progress"></div>
+		</div>
+		<p class="text-center">Progress Bar</p>
+	</header>
+
+	<article class="font-['Bebas_Neue']">
+		<h2 class="text-center">Petunjuk Permainan:</h2>
+		<ul class="list-decimal mx-3 flex flex-col items-center">
+			<li class="">Pemain harus menebak angka yang dibuat oleh komputer</li>
+			<li class="">Angka akan di-random setiap run, sehingga setiap penekanan tombol, angka yang diminta akan
+				berbeda-beda</li>
+		</ul>
+		<div class="flex flex-col items-center justify-center my-5">
+			<p class="font-['Bebas_Neue']">Tebak Angka Anda Disini:</p>
+			<input type="text" class="border border-black rounded-lg" id="tebakan"><br>
+			<button class="border-1 p-5 font-['Bebas_Neue'] bg-sky-500 hover:bg-sky-800 rounded-xl text-white"
+				id="butts">Submit
+				Answer</button>
+		</div>
+	</article>
+
+	<footer>
+
+	</footer>
+
+</body>
+<script src="script.js"></script>
+
+</html>
