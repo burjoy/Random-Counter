@@ -4,10 +4,11 @@ let progress = document.getElementById("progress");
 let level = document.getElementById("level");
 let benar = 0;
 let no_level = 1;
+let cek = Math.round(Math.random()*5);
 butt.addEventListener("click", function(){
 	let nilai = tebakan.value;
-	cek = Math.round(Math.random()*5)
 	if(nilai == cek){
+		cek = Math.round(Math.random()*5);
 		if(benar < 5){
 			benar++;
 			let proses = 'w-'+'['+benar/5*100+'%'+']';
@@ -17,6 +18,8 @@ butt.addEventListener("click", function(){
 			progress.classList.add(proses);
 			progress.classList.add('h-full');
 			progress.classList.remove(regres);
+			console.log(cek);
+			console.log(nilai);
 		}
 		if(benar == 5){
 			no_level++;
@@ -25,10 +28,12 @@ butt.addEventListener("click", function(){
 			progress.classList.remove('w-[100%]');
 			progress.classList.remove('bg-sky-500');
 		}
-		console.log(benar);
 	}
 	else{
 		console.log('Salah!');
 		console.log(cek);
 	}
 });
+// document.addEventListener('click', function(e){
+// 	console.log(e.target);
+// })
