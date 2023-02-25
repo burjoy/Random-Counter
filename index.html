@@ -28,9 +28,9 @@
 	<article class="font-['Bebas_Neue']">
 		<h2 class="text-center">Petunjuk Permainan:</h2>
 		<ul class="list-decimal mx-3 flex flex-col items-center">
-			<li class="">Pemain harus menebak angka yang dibuat oleh komputer</li>
-			<li class="">Angka akan dirandom apabila pemain bisa menebak angka dengan benar</li>
-			<li>Apabila pemain tidak bisa menebak angka sebanyak 3x, game over</li>
+			<li>Pemain harus menebak angka yang dibuat oleh komputer</li>
+			<li>Angka akan dirandom apabila pemain bisa menebak angka dengan benar</li>
+			<li>Apabila pemain tidak bisa menebak angka sebanyak 5x dalam 1 level, game over</li>
 		</ul>
 		<div class="flex flex-col items-center justify-center my-5">
 			<p class="font-['Bebas_Neue']">Tebak Angka Anda Disini:</p>
@@ -38,6 +38,17 @@
 			<button class="border-1 p-3 font-['Bebas_Neue'] bg-sky-500 hover:bg-sky-800 rounded-xl text-white"
 				id="butts">Submit
 				Answer</button>
+		</div>
+		<p class="text-center">Life:</p>
+		<div class="border border-sky-400 h-5 w-[30%] mx-auto">
+			<div class="bg-sky-500 w-[100%] h-full" id="life">
+			</div>
+		</div>
+		<div class="text-center mt-5" id="slider_warna">
+			<p>Progress Bar Color</p>
+			<p>Red: </p><input type="range" name="" max="255" value="0" class=""><span></span><br>
+			<p>Green: </p><input type="range" name="" max="255" value="0" class=""><span></span><br>
+			<p>Blue: </p><input type="range" name="" max="255" value="0" class=""><span></span>
 		</div>
 	</article>
 
