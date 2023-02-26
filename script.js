@@ -43,6 +43,8 @@ let cons = () => {
 			level.innerText = 'Level: ' + no_level;
 			progress.classList.remove('w-[100%]');
 			progress.classList.remove('bg-sky-500');
+			life.classList.remove(`w-[${salah/5*100}%]`);
+			life.classList.add('w-[100%]');
 			salah = 0;
 		}
 	}
@@ -56,6 +58,7 @@ let cons = () => {
 	if(nilai == ''){
 		alert('Mohon isi kotak jawaban');
 	}
+	return salah;
 }
 butt.addEventListener("click", cons);
 
